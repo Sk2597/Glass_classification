@@ -25,7 +25,7 @@ SECRET_KEY = '2igt#*4-xh9h5q41a2)h-p=bjmn!ctyms1&!6*hwk5)dhc70vq'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['glass-classification.herokuapp.com','127.0.0.1:8000']
 
 
 # Application definition
