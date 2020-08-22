@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<div style = "padding-left: 300px;padding-right: 300px; width: auto;min-width: fit-content; min-height: auto;">
+<form class="text-center border border-light p-5" action="{% url 'resultspage' %}">
+    {% csrf_token %} 
+    <p class="h4 mb-4">Glass Classification</p>
+
+
+        <input type="text" required name="RI" class="form-control mb-4" placeholder="RI"  style="background-color: rgba(0,0,255,.1)"> 
+        <input type="text" required name="Na" class="form-control mb-4" placeholder="Na" style="background-color: rgba(0,0,255,.1)">
+        <input type="text" required name="Mg" class="form-control mb-4" placeholder="Mg" style="background-color: rgba(0,0,255,.1)"> 
+        <input type="text" required name="Al" class="form-control mb-4" placeholder="Al" style="background-color: rgba(0,0,255,.1)"> 
+        <input type="text" required name="Si" class="form-control mb-4" placeholder="Si" style="background-color: rgba(0,0,255,.1)"> 
+        <input type="text" required name="K" class="form-control mb-4" placeholder="K" style="background-color: rgba(0,0,255,.1)"> 
+        <input type="text" required name="Ca" class="form-control mb-4" placeholder="Ca" style="background-color: rgba(0,0,255,.1)"> 
+        <input type="text" required name="Ba" class="form-control mb-4" placeholder="Ba" style="background-color: rgba(0,0,255,.1)"> 
+        <input type="text" required name="Fe" class="form-control mb-4" placeholder="Fe" style="background-color: rgba(0,0,255,.1)"> 
+
+        <input class="btn btn-info btn-block" type="submit" name="" value="submit">
+
+
+</form>
+</div>
+{% endblock %}
